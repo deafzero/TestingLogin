@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        .error-message{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>Ini adalah halaman login</h3>
+    <p class="error-message">{{ .notvalid}}</p>
+    <form action="/login/auth" method="post">
+        <input type="text" name="username" id="username">
+        <br>
+        {{ if .Username}} 
+        <p class="error-message">{{ .Username }}</p>
+        <br>
+        {{ end }}
+        <input type="text" name="password" id="password">
+        <br>
+        {{ if .Password}} 
+        <p class="error-message">{{ .Password }}</p>
+        <br>
+        {{end }}
+        <button type="submit">Kirim</button>
+    </form>    
+</body>
+</html>
