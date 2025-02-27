@@ -6,7 +6,7 @@ diprogram ini sebenarnya saya buat untuk melakukan sebuah pengetesan terhadap se
 ## 🛠️ Tools
 - [Bahasa pemogramman Go](https://go.dev/) - Sebagai web server 
 - [Air](https://github.com/air-verse/air) - Untuk Mereload ketika file disave.
-- [Fiber](https://github.com/air-verse/air) - Framework Web Server.
+- [Fiber](https://gofiber.io/) - Framework Web Server.
 - dan lain lain.
 ## 📌 Usage 
 - `$ git clone https://github.com/deafzero/TestingLogin.git`
